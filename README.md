@@ -14,19 +14,19 @@ The introductory comment at the top of the code specifies the MIT license, which
 
 The contract is named "MyToken," serving as the blueprint for our custom token. Within the contract, variables are established to hold essential information about the token. These include the token's name (e.g., "Metacrafters"), its abbreviation (e.g., "Token"), and the total supply of tokens, which is initially set to zero. A mapping is introduced to create a link between addresses and their associated token balances. This mapping serves as a convenient way to keep track of how many tokens each address holds.
 
-
+```
 contract MyToken {
     // Variables
     string public tokenName = "Code";
     string public tokenSymbol = "Super Code";
     uint256 public totalSupply = 0;
-
+```
 
 The "mint" function is defined to facilitate the creation of new tokens. This function accepts two parameters: the address to which the new tokens will be sent and the number of tokens to be created. Upon calling this function, the total supply of tokens is increased, and the balance of the recipient's address is updated to reflect the new tokens. Conversely, the "burn" function is established to allow token holders to destroy their tokens. This function accepts one parameter: the number of tokens to be burned. When the "burn" function is invoked, the total supply of tokens is decreased, and the balance of the calling address (the person initiating the burn) is reduced accordingly.
 
 ## Getting Started With Virtual Ethereum 
 
-
+```
 - In the Remix sidebar, go to the "Deploy & Run Transactions" section.
 - Make sure you are connected to your Ethereum wallet, such as MetaMask, in Remix. You'll need Ether in your wallet to cover the deployment costs.
 - Select "Token" from the "Deployed Contracts" section. This is the contract you've just compiled.
@@ -34,3 +34,4 @@ The "mint" function is defined to facilitate the creation of new tokens. This fu
 - MetaMask (or your Ethereum wallet extension) will open or If you choose remix vm,there is no wallet need, then it asking you to confirm the deployment transaction. Confirm it by paying the gas fees.
 - Once the transaction is mined and confirmed, Remix will provide you with the contract's deployed address, transaction details, and contract functions that you can interact with.
 - Contract Usage:
+```
